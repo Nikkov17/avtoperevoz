@@ -48,14 +48,9 @@ function Main() {
 
   const asphaltogranulatContent = [
     {
-      title: "Асфальто гранулят",
+      title: "Асфальто и Бетоно гранулят",
       description: "цены",
       image: "./images/asphaltogranulat.jpg",
-    },
-    {
-      title: "Бетоно гранулят",
-      description: "цены",
-      image: "./images/Betonogranulat.jpg",
     },
   ];
 
