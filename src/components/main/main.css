@@ -1,0 +1,80 @@
+.main {
+  width: 100%;
+  font-weight: 600;
+}
+
+.video {
+  opacity: 0.6;
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+  object-fit: fill;
+}
+
+.main-start {
+  width:100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  height: 100vh;
+  color: white;
+  position: fixed;
+  top:0;
+  left: 0;
+}
+
+.main-sliders {
+  width: 100%;
+  margin-top: 100vh;
+}
+
+.main-our-services {
+  z-index: 10;
+  margin-top: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .main-our-services {
+    margin-top: 40%;
+  }
+}
+
+.main-our-services p {
+  font-size: 140%;
+}
+
+.main-our-services-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.main-our-services-list li {
+  padding: 4px;
+  border-bottom: 1px dotted #ffe400;
+  flex-basis: 30%;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .main-our-services-list li {
+    flex-basis: 40%;
+    padding: 12px;
+  }
+}
+.main-our-services-list li a{
+  color:white;
+  text-decoration: none;
+}
+.main-our-services-list li a:hover {
+  cursor: pointer;
+  color: #ffe400;
+}
