@@ -20,6 +20,16 @@
   height: 100%;
 }
 
+.slider .slick-next {
+  z-index: 5;
+  right: 2%;
+}
+
+.slider .slick-prev {
+  left: 2%;
+  z-index: 5;
+}
+
 .slider-item {
   outline: none;
   height: 100%;

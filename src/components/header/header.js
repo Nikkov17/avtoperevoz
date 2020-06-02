@@ -27,9 +27,14 @@ function Header() {
           <h1 className="cargo">Грузоперевозки</h1>
           <div>&#8249;АВТОГИНАФ СТРОЙ&#8250;</div>
         </a>
-        <a className="tel" href="tel:+375296212612">
-          +375 (29) 621-26-12
-        </a>
+        <div className="tels">
+          <a className="tel" href="tel:+375296212612">
+            +375 (29) 621-26-12
+          </a>
+          <a className="tel" href="tel:+375296974468">
+            +375 (29) 697-44-68
+          </a>
+        </div>
       </div>
     </header>
   );

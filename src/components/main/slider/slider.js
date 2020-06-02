@@ -11,7 +11,7 @@ function SliderComponent(props) {
   const settings = {
     infinite: true,
     speed: 2500,
-    arrows: false,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: props.content.length > 1 ? true : false,
