@@ -17,6 +17,7 @@ function SliderComponent(props) {
     autoplay: props.content.length > 1 ? true : false,
     autoplaySpeed: 4000,
     easing: "ease",
+    swipe: false,
     beforeChange: function () {
       setHidden(true);
     },
