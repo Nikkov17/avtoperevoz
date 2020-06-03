@@ -13,7 +13,7 @@ function SliderComponent(props) {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: props.content.length > 1 ? true : false,
-    autoplaySpeed: 4500,
+    autoplaySpeed: 5500,
     easing: "ease",
   };
 
