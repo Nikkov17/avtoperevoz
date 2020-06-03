@@ -16,11 +16,11 @@ function Main() {
       description: "Вместимость 20м3. цены",
       image: "./images/6501.jpg",
     },
-    {
-      title: "Ginaf и Volvo fm",
-      description: "Вместимость 18м3. цены",
-      image: "./images/volvo-fm-ginaf.jpg",
-    },
+    // {
+    //   title: "Ginaf и Volvo fm",
+    //   description: "Вместимость 18м3. цены",
+    //   image: "./images/volvo-fm-ginaf.jpg",
+    // },
     {
       title: "Daf 85",
       description: "Грузоподъемность 45т. цены",
@@ -40,7 +40,7 @@ function Main() {
 
   const rastgruntContent = [
     {
-      title: "Чернозем",
+      title: "Чернозём",
       description: "цены",
       image: "./images/rastgrunt.jpg",
     },
@@ -48,9 +48,14 @@ function Main() {
 
   const asphaltogranulatContent = [
     {
-      title: "Асфальто и Бетоно гранулят",
+      title: "Асфальтогранулят",
       description: "цены",
       image: "./images/asphaltogranulat.jpg",
+    },
+    {
+      title: "Бетоногранулят",
+      description: "цены",
+      image: "./images/beton.jpg",
     },
   ];
 
@@ -80,7 +85,7 @@ function Main() {
 
   const kotlovanContent = [
     {
-      title: "Разработка котлованов",
+      title: "Разработка котлована",
       description: "цены",
       image: "./images/kotlovan.jpg",
     },
@@ -117,16 +122,16 @@ function Main() {
               <a href="#asphaltogranulat">Продажа асфальто и бетоногранулята</a>
             </li>
             <li>
-              <a href="#sheben">Доставка и/или продажа щебня</a>
+              <a href="#sheben">Доставка и продажа щебня</a>
             </li>
             <li>
-              <a href="#pgs">Доставка и/или продажа песка и ПГС</a>
+              <a href="#pgs">Доставка и продажа песка и ПГС</a>
             </li>
             <li>
               <a href="#snow">Уборка снега</a>
             </li>
             <li>
-              <a href="#kotlovan">Разработка котлованов</a>
+              <a href="#kotlovan">Разработка котлована</a>
             </li>
             <li>
               <a href="#vyvozmusora">Вывоз мусора</a>

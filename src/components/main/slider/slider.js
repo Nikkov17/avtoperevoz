@@ -10,12 +10,12 @@ function SliderComponent(props) {
   const content = props.content;
   const settings = {
     infinite: true,
-    speed: 2500,
+    speed: 2000,
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: props.content.length > 1 ? true : false,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3500,
     easing: "ease",
     swipe: false,
     beforeChange: function () {
