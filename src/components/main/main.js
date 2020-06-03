@@ -90,7 +90,7 @@ function Main() {
     {
       title: "Вывоз мусора",
       description: "Цена: 250р",
-      image: "./images/vyvozmusora.jpg",
+      image: "",
     },
   ];
 
