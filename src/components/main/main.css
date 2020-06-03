@@ -4,7 +4,7 @@
 }
 
 .video {
-  opacity: 0.8;
+  opacity: 0.6;
   position: absolute;
   height: 100%;
   min-width: 100%;
@@ -45,7 +45,8 @@
 }
 
 .main-our-services p {
-  font-size: 140%;
+  font-size: 200%;
+  font-family: "Open Sans",sans-serif;
 }
 
 .main-our-services-list {
@@ -61,7 +62,7 @@
 .main-our-services-list li {
   padding: 4px;
   border-bottom: 1px dotted #ffe400;
-  flex-basis: 30%;
+  flex-basis: 23%;
   text-align: center;
 }
 @media (max-width: 1024px) {
@@ -73,6 +74,12 @@
 .main-our-services-list li a{
   color:white;
   text-decoration: none;
+  font-size: 130%;
+}
+@media (max-width: 1024px) {
+  .main-our-services-list li a{
+    font-size: 100%;
+  }
 }
 .main-our-services-list li a:hover {
   cursor: pointer;

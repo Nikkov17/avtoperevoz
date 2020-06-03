@@ -3,17 +3,16 @@ import "./main.css";
 import SliderComponent from "./slider/slider";
 
 function Main() {
-  // 1 час работы самосвала грузоподъемностью 20 т составляет 35р без учета НДС +
-  // 1 км пробега самосвала грузоподъемностью 20 т составляет 1.2р без учета НДС
   const trucksContent = [
     {
       title: "МАЗ 5516",
-      description: "Грузоподъемность 20т. цены",
+      description: "20т - 15м3",
+      price: "1 час работы - 35р\r\n+\r\n1 км пробега - 1.2р",
       image: "./images/5516.jpg",
     },
     {
       title: "МАЗ 6501е9",
-      description: "Вместимость 20м3. цены",
+      description: "20м3",
       image: "./images/6501.jpg",
     },
     // {
@@ -23,17 +22,17 @@ function Main() {
     // },
     {
       title: "Daf 85",
-      description: "Грузоподъемность 45т. цены",
+      description: "45т",
       image: "./images/daf.jpg",
     },
     {
       title: "Scania",
-      description: "Вместимость 18м3. цены",
+      description: "18м3",
       image: "./images/scania.jpg",
     },
     {
       title: "MAN TGA",
-      description: "Вместимость 15м3, полный привод. цены",
+      description: "15м3. Полный привод",
       image: "./images/man-tga.jpg",
     },
   ];
@@ -62,7 +61,8 @@ function Main() {
   const shebenContent = [
     {
       title: "Щебень",
-      description: "цены",
+      description:
+        "цены на этот гребаный щебень в этом гребанном самолете! 3000 долларов за килограмм!",
       image: "./images/sheben.jpg",
     },
   ];

@@ -1,34 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "./slider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function SliderComponent(props) {
-  const [hidden, setHidden] = useState(false);
-
   const content = props.content;
   const settings = {
     infinite: true,
-    speed: 2000,
+    speed: 1500,
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: props.content.length > 1 ? true : false,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 4500,
     easing: "ease",
-    swipe: false,
-    beforeChange: function () {
-      setHidden(true);
-    },
-    afterChange: function () {
-      setHidden(false);
-    },
   };
-
-  let contentClasses = hidden
-    ? "slider-item-content hidden"
-    : "slider-item-content";
 
   return (
     <Slider {...settings} className="slider">
@@ -40,9 +27,19 @@ function SliderComponent(props) {
               src={item.image}
               alt={item.title}
             ></img>
-            <div className={contentClasses}>
+            <div className="slider-item-content">
               <h3>{item.title}</h3>
-              <div>{item.description}</div>
+              <div>
+                {item.description}
+                {item.price ? (
+                  <div className="slider-item-content-price">
+                    <p>Стоимость(Без учета НДС):</p>
+                    <div>{item.price}</div>
+                  </div>
+                ) : (
+                  false
+                )}
+              </div>
             </div>
           </div>
         </div>
