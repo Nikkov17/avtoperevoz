@@ -7,40 +7,44 @@ function Main() {
     {
       title: "МАЗ 5516",
       description: "20т - 15м3",
-      price: "1 час работы - 35р\r\n+\r\n1 км пробега - 1.2р",
+      price: "45 BYN/час\r\n+\r\n1.2 BYN/км",
       image: "./images/5516.jpg",
     },
     {
       title: "МАЗ 6501е9",
       description: "20м3",
+      price: "50 BYN/час",
       image: "./images/6501.jpg",
     },
-    // {
-    //   title: "Ginaf и Volvo fm",
-    //   description: "Вместимость 18м3. цены",
-    //   image: "./images/volvo-fm-ginaf.jpg",
-    // },
     {
-      title: "Daf 85",
-      description: "45т",
-      image: "./images/daf.jpg",
+      title: "Ginaf",
+      price: "60 BYN/час",
+      description: "25м3",
+      image: "./images/volvo-fm-ginaf.jpg",
     },
     {
       title: "Scania",
+      price: "50 BYN/час",
       description: "18м3",
       image: "./images/scania.jpg",
     },
     {
       title: "MAN TGA",
+      price: "50 BYN/час",
       description: "15м3. Полный привод",
       image: "./images/man-tga.jpg",
+    },
+    {
+      title: "Daf 85",
+      price: "0.10 BYN т/км",
+      description: "45т",
+      image: "./images/daf.jpg",
     },
   ];
 
   const rastgruntContent = [
     {
       title: "Чернозём",
-      description: "цены",
       image: "./images/rastgrunt.jpg",
     },
   ];
@@ -48,12 +52,12 @@ function Main() {
   const asphaltogranulatContent = [
     {
       title: "Асфальтогранулят",
-      description: "цены",
+      price: "от 10 BYN/т",
       image: "./images/asphaltogranulat.jpg",
     },
     {
       title: "Бетоногранулят",
-      description: "цены",
+      price: "от 3 BYN/т",
       image: "./images/beton.jpg",
     },
   ];
@@ -61,8 +65,6 @@ function Main() {
   const shebenContent = [
     {
       title: "Щебень",
-      description:
-        "цены на этот гребаный щебень в этом гребанном самолете! 3000 долларов за килограмм!",
       image: "./images/sheben.jpg",
     },
   ];
@@ -70,7 +72,7 @@ function Main() {
   const pgsContent = [
     {
       title: "Песок и ПГС",
-      description: "цены",
+      price: "от 6.5 BYN/м3",
       image: "./images/pgs.jpg",
     },
   ];
@@ -78,7 +80,6 @@ function Main() {
   const snowContent = [
     {
       title: "Вывоз снега",
-      description: "цены",
       image: "./images/snow.jpg",
     },
   ];
@@ -86,7 +87,6 @@ function Main() {
   const kotlovanContent = [
     {
       title: "Разработка котлована",
-      description: "цены",
       image: "./images/kotlovan.jpg",
     },
   ];
@@ -94,8 +94,8 @@ function Main() {
   const vyvozmusoraContent = [
     {
       title: "Вывоз мусора",
-      description: "Цена: 250р",
-      image: "",
+      price: "от 250 BYN/15 м3",
+      image: "./images/constructionwaste.jpeg",
     },
   ];
 
@@ -111,24 +111,27 @@ function Main() {
         />
         <div className="main-our-services">
           <p>Наши услуги:</p>
+          <p className="price-info">
+            Представленные на сайте цены являются ориентировочными.
+          </p>
           <ul className="main-our-services-list">
             <li>
               <a href="#trucks">Грузоперевозки самосвалами</a>
             </li>
             <li>
-              <a href="#rastgrunt">Доставка растительного грунта</a>
+              <a href="#rastgrunt">Продажа растительного грунта</a>
             </li>
             <li>
               <a href="#asphaltogranulat">Продажа асфальто и бетоногранулята</a>
             </li>
             <li>
-              <a href="#sheben">Доставка и продажа щебня</a>
+              <a href="#sheben">Продажа щебня</a>
             </li>
             <li>
-              <a href="#pgs">Доставка и продажа песка и ПГС</a>
+              <a href="#pgs">Продажа песка и ПГС</a>
             </li>
             <li>
-              <a href="#snow">Уборка снега</a>
+              <a href="#snow">Вывоз снега</a>
             </li>
             <li>
               <a href="#kotlovan">Разработка котлована</a>

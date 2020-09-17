@@ -4,7 +4,7 @@
 }
 @media (max-width: 1024px) {
   .slider {
-    height: 80vw;
+    height: 70vw;
   }
 }
 
@@ -61,7 +61,7 @@
 
 @media (max-width: 1024px) {
   .slider-item-content {
-    margin-top: -80vw;
+    margin-top: -70vw;
   }
 }
 

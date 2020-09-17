@@ -22,11 +22,15 @@ function SliderComponent(props) {
       {content.map((item) => (
         <div className="slider-item">
           <div className="slider-item-image-background">
-            <img
-              className="slider-item-image"
-              src={item.image}
-              alt={item.title}
-            ></img>
+            {item.image ? (
+              <img
+                className="slider-item-image"
+                src={item.image}
+                alt={item.title}
+              ></img>
+            ) : (
+              false
+            )}
             <div className="slider-item-content">
               <h3>{item.title}</h3>
               <div>
