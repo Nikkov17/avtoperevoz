@@ -40,7 +40,12 @@
 }
 @media (max-width: 1024px) {
   .main-our-services {
-    margin-top: 40%;
+    margin-top: 35%;
+  }
+}
+@media (max-width: 350px) {
+  .main-our-services {
+    margin-top: 15%;
   }
 }
 
@@ -66,6 +71,11 @@
   list-style-type: none;
   flex-wrap: wrap;
   padding: 0;
+}
+@media (max-width: 350px) {
+  .main-our-services-list {
+    margin-top: 0;
+  }
 }
 
 .main-our-services-list li {

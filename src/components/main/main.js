@@ -44,19 +44,19 @@ function Main() {
 
   const rastgruntContent = [
     {
-      title: "Чернозём",
+      title: "Продажа чернозёма",
       image: "./images/rastgrunt.jpg",
     },
   ];
 
   const asphaltogranulatContent = [
     {
-      title: "Асфальтогранулят",
+      title: "Продажа асфальтогранулята",
       price: "от 10 BYN/т",
       image: "./images/asphaltogranulat.jpg",
     },
     {
-      title: "Бетоногранулят",
+      title: "Продажа бетоногранулята",
       price: "от 3 BYN/т",
       image: "./images/beton.jpg",
     },
@@ -64,22 +64,55 @@ function Main() {
 
   const shebenContent = [
     {
-      title: "Щебень",
+      title: "Продажа щебня",
       image: "./images/sheben.jpg",
     },
   ];
 
   const pgsContent = [
     {
-      title: "Песок и ПГС",
+      title: "Продажа песка и ПГС",
       price: "от 6.5 BYN/м3",
       image: "./images/pgs.jpg",
+    },
+  ];
+
+  const cornContent = [
+    {
+      title: "Перевозка кукурузы",
+      price: "от 45 BYN/час",
+      image: "",
+    },
+  ];
+
+  const potatoContent = [
+    {
+      title: "Перевозка картофеля",
+      price: "от 45 BYN/час",
+      image: "",
+    },
+  ];
+
+  const cerealContent = [
+    {
+      title: "Перевозка зерна",
+      price: "от 45 BYN/час или 0.10 BYN т/км",
+      image: "",
+    },
+  ];
+
+  const silosContent = [
+    {
+      title: "Перевозка силоса",
+      price: "от 45 BYN/час",
+      image: "",
     },
   ];
 
   const snowContent = [
     {
       title: "Вывоз снега",
+      price: "от 45 BYN/час",
       image: "./images/snow.jpg",
     },
   ];
@@ -131,6 +164,18 @@ function Main() {
             <li>
               <a href="#pgs">Продажа песка и ПГС</a>
             </li>
+            {/* <li>
+              <a href="#corn">Перевозка кукурузы</a>
+            </li>
+            <li>
+              <a href="#potato">Перевозка картофеля</a>
+            </li>
+            <li>
+              <a href="#cereal">Перевозка зерна</a>
+            </li>
+            <li>
+              <a href="#silos">Перевозка силоса</a>
+            </li> */}
             <li>
               <a href="#snow">Вывоз снега</a>
             </li>
@@ -154,6 +199,14 @@ function Main() {
         <SliderComponent content={shebenContent} />
         <a id="pgs" />
         <SliderComponent content={pgsContent} />
+        {/* <a id="corn" />
+        <SliderComponent content={cornContent} />
+        <a id="potato" />
+        <SliderComponent content={potatoContent} />
+        <a id="silos" />
+        <SliderComponent content={silosContent} />
+        <a id="cereal" />
+        <SliderComponent content={cerealContent} /> */}
         <a id="snow" />
         <SliderComponent content={snowContent} />
         <a id="kotlovan" />

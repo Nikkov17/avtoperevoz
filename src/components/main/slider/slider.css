@@ -101,10 +101,9 @@ div.slider-item-content-price {
 div.slider-item-content-price p{
   font-family: "Open Sans",sans-serif;
   margin-bottom: 5px;
-  font-size: 120%;
+  font-size: 90%;
 }
-@media (max-width: 1024px) {
-  div.slider-item-content-price div {
-    font-size: 120%;
-  }
+ 
+div.slider-item-content-price div{
+  font-size: 120%;
 }

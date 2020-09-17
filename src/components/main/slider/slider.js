@@ -8,7 +8,7 @@ function SliderComponent(props) {
   const content = props.content;
   const settings = {
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -22,15 +22,11 @@ function SliderComponent(props) {
       {content.map((item) => (
         <div className="slider-item">
           <div className="slider-item-image-background">
-            {item.image ? (
-              <img
-                className="slider-item-image"
-                src={item.image}
-                alt={item.title}
-              ></img>
-            ) : (
-              false
-            )}
+            <img
+              className="slider-item-image"
+              src={item.image}
+              alt={item.title}
+            ></img>
             <div className="slider-item-content">
               <h3>{item.title}</h3>
               <div>
