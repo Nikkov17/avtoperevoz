@@ -106,6 +106,7 @@ function Main() {
           autoPlay={true}
           loop={true}
           muted={true}
+          playsinline={true}
           className="video"
           src="./videos/excavator.mp4"
         />
