@@ -81,7 +81,7 @@ function Main() {
     {
       title: "Перевозка кукурузы",
       price: "от 45 BYN/час",
-      image: "",
+      image: "./images/kukuruza.jpg",
     },
   ];
 
@@ -89,7 +89,7 @@ function Main() {
     {
       title: "Перевозка картофеля",
       price: "от 45 BYN/час",
-      image: "",
+      image: "./images/potato.jpg",
     },
   ];
 
@@ -97,15 +97,12 @@ function Main() {
     {
       title: "Перевозка зерна",
       price: "от 45 BYN/час или 0.10 BYN т/км",
-      image: "",
+      image: "./images/cereal.jpg",
     },
-  ];
-
-  const silosContent = [
     {
       title: "Перевозка силоса",
       price: "от 45 BYN/час",
-      image: "",
+      image: "./images/silos.png",
     },
   ];
 
@@ -164,18 +161,15 @@ function Main() {
             <li>
               <a href="#pgs">Продажа песка и ПГС</a>
             </li>
-            {/* <li>
+            <li>
               <a href="#corn">Перевозка кукурузы</a>
             </li>
             <li>
               <a href="#potato">Перевозка картофеля</a>
             </li>
             <li>
-              <a href="#cereal">Перевозка зерна</a>
+              <a href="#cereal">Перевозка зерна и силоса</a>
             </li>
-            <li>
-              <a href="#silos">Перевозка силоса</a>
-            </li> */}
             <li>
               <a href="#snow">Вывоз снега</a>
             </li>
@@ -199,14 +193,12 @@ function Main() {
         <SliderComponent content={shebenContent} />
         <a id="pgs" />
         <SliderComponent content={pgsContent} />
-        {/* <a id="corn" />
+        <a id="corn" />
         <SliderComponent content={cornContent} />
         <a id="potato" />
         <SliderComponent content={potatoContent} />
-        <a id="silos" />
-        <SliderComponent content={silosContent} />
         <a id="cereal" />
-        <SliderComponent content={cerealContent} /> */}
+        <SliderComponent content={cerealContent} />
         <a id="snow" />
         <SliderComponent content={snowContent} />
         <a id="kotlovan" />
