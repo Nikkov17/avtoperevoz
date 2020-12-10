@@ -16,14 +16,33 @@ function SliderComponent(props) {
     autoplaySpeed: 5500,
     easing: "ease",
   };
+  const priceView = (price) => {
+    return price.map((line, index) => {
+      const row = line.map((column, index) => <div key={index}>{column}</div>);
+
+      return (
+        <div key={index} className="slider-item-content-price-row">
+          {row}
+        </div>
+      );
+    });
+  };
 
   return (
     <Slider {...settings} className="slider">
       {content.map((item) => (
-        <div className="slider-item">
-          <div className="slider-item-image-background">
+        <div className="slider-item" key={item.title}>
+          <div
+            className={
+              item.id === "specialoffers"
+                ? "slider-item-image-background special-offers"
+                : "slider-item-image-background"
+            }
+          >
             <img
-              className="slider-item-image"
+              className={
+                item.image ? "slider-item-image" : "slider-item-image opacity"
+              }
               src={item.image}
               alt={item.title}
             ></img>
@@ -31,14 +50,9 @@ function SliderComponent(props) {
               <h3>{item.title}</h3>
               <div>
                 {item.description}
-                {item.price ? (
-                  <div className="slider-item-content-price">
-                    <p>Стоимость(Без учета НДС):</p>
-                    <div>{item.price}</div>
-                  </div>
-                ) : (
-                  false
-                )}
+                <div className="slider-item-content-price">
+                  {item.price ? priceView(item.price) : false}
+                </div>
               </div>
             </div>
           </div>

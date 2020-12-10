@@ -30,6 +30,16 @@
   margin-top: 100vh;
 }
 
+.main-sliders a {
+  position: absolute;
+  z-index: -1;
+}
+@media (max-width: 1024px) {
+  .main-sliders a {
+    margin-top: -70vw;
+  }
+}
+
 .main-our-services {
   z-index: 10;
   margin-top: 20%;
