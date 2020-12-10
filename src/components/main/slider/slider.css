@@ -40,7 +40,7 @@
   outline: none;
 }
 
-.slider-item-image {
+.slider .slider-item .slider-item-image-background .slider-item-image {
   width: 100%;
   height: 100%;
   opacity: 0.6;

@@ -37,7 +37,7 @@ function Main() {
           src="./videos/excavator.mp4"
         />
         <nav className="main-our-services">
-          <p>Наши услуги:</p>
+          <h2>Наши услуги:</h2>
           <p className="price-info">
             Представленные на сайте цены являются ориентировочными.
           </p>

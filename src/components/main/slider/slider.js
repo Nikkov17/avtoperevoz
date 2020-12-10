@@ -1,8 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
-import "./slider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "./slider.css";
 
 function SliderComponent(props) {
   const content = props.content;
@@ -39,13 +41,16 @@ function SliderComponent(props) {
                 : "slider-item-image-background"
             }
           >
-            <img
+            <LazyLoadImage
+              alt={item.title}
               className={
                 item.image ? "slider-item-image" : "slider-item-image opacity"
               }
+              width="100%"
+              height="100%"
+              effect="blur"
               src={item.image}
-              alt={item.title}
-            ></img>
+            />
             <div className="slider-item-content">
               <h3>{item.title}</h3>
               <div>
