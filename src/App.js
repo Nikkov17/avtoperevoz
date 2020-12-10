@@ -1,15 +1,17 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./App.css";
 import Header from "./components/header/header";
 import Main from "./components/main/main";
-import Footer from "./components/footer/footer";
+const Footer = React.lazy(() => import("./components/footer/footer"));
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Main />
-      <Footer />
+      <Suspense fallback={<div>Загрузка...</div>}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
