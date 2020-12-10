@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
+import React, { Fragment, Suspense } from "react";
 import "./main.css";
-import SliderComponent from "./slider/slider";
 import data from "../../data/servicesslidercontent";
+const SliderComponent = React.lazy(() => import("./slider/slider"));
 
 function Main() {
   const ourServices = data.map((service) => {
@@ -20,7 +20,9 @@ function Main() {
         <a id={service.id} href={`#${service.id}`}>
           {service.title}
         </a>
-        <SliderComponent content={service.sliderContent} />
+        <Suspense fallback={<div>Загрузка...</div>}>
+          <SliderComponent content={service.sliderContent} />
+        </Suspense>
       </Fragment>
     );
   });
