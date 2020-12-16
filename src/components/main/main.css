@@ -65,7 +65,8 @@
   font-family: "Open Sans",sans-serif;
 }
 
-.main-our-services h2 {
+.main-our-services div {
+  margin-block-start: 0.83em;
   font-size: 200%;
   margin-bottom: 0;
   font-family: "Open Sans",sans-serif;

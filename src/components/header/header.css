@@ -38,6 +38,11 @@
   color: #f9f9f9;
 }
 
+.title h2 {
+  margin: 0;
+  font-size: 100%;
+}
+
 .title:hover {
   cursor: pointer;
 }

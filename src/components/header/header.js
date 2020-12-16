@@ -25,7 +25,7 @@ function Header() {
       <div className="header-content">
         <a href="https://avtoperevoz.by/" className="title">
           <h1 className="cargo">Грузоперевозки</h1>
-          <div>&#8249;АВТОГИНАФ СТРОЙ&#8250;</div>
+          <h2>&#8249;АВТОГИНАФ СТРОЙ&#8250;</h2>
         </a>
         <div className="tels">
           <a className="tel" href="tel:+375296212612">
