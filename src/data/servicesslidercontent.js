@@ -15,10 +15,16 @@ const trucksContent = {
       image: "./images/6501.jpeg",
     },
     {
+      title: "DAF CF",
+      price: [["Цена без НДС"], ["55 BYN/час или 2 BYN/км круг"]],
+      description: "Длинномер, длинна кузова 13.5 м.",
+      image: "./images/daf.jpeg",
+    },
+    {
       title: "Ginaf",
       price: [["Цена без НДС"], ["60 BYN/час"]],
-      description: "25м3",
-      image: "./images/volvo-fm-ginaf.jpeg",
+      description: "Колесная формула 8x8, 25м3",
+      image: "./images/ginaf.jpeg",
     },
     {
       title: "Scania",
@@ -31,12 +37,6 @@ const trucksContent = {
       price: [["Цена без НДС"], ["50 BYN/час"]],
       description: "15м3. Полный привод",
       image: "./images/man-tga.jpeg",
-    },
-    {
-      title: "Daf 85",
-      price: [["Цена без НДС"], ["0.10 BYN т/км"]],
-      description: "45т",
-      image: "./images/daf.jpeg",
     },
   ],
 };

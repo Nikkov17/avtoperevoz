@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /spetspredlozheniya.html
+Disallow: /shcheben-vtorichnyy.html
