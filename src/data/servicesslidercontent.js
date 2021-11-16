@@ -42,27 +42,27 @@ const trucksContent = {
 };
 
 const rastgruntContent = {
-  title: "Продажа растительного грунта",
+  title: "Растительный грунт",
   id: "rastgrunt",
   sliderContent: [
     {
-      title: "Продажа чернозёма",
+      title: "Чернозём",
       image: "./images/rastgrunt.jpeg",
     },
   ],
 };
 
 const asphaltogranulatContent = {
-  title: "Продажа асфальто и бетоногранулята",
+  title: "Асфальто и бетоногранулят",
   id: "asphaltogranulat",
   sliderContent: [
     {
-      title: "Продажа асфальтогранулята",
+      title: "Асфальтогранулят",
       price: [["Цена без НДС"], ["от 10 BYN/т"]],
       image: "./images/asphaltogranulat.jpeg",
     },
     {
-      title: "Продажа бетоногранулята",
+      title: "Бетоногранулят",
       price: [["Цена без НДС"], ["от 3 BYN/т"]],
       image: "./images/beton.jpeg",
     },
@@ -70,11 +70,11 @@ const asphaltogranulatContent = {
 };
 
 const shebenContent = {
-  title: "Продажа щебня",
+  title: "Щебень",
   id: "sheben",
   sliderContent: [
     {
-      title: "Продажа щебня",
+      title: "Щебень",
       price: [
         ["Фракция", "Цена без НДС(BYN)", "Цена с НДС(BYN)"],
         ["0.63-5", "27.64", "33.17"],
@@ -91,11 +91,11 @@ const shebenContent = {
 };
 
 const pgsContent = {
-  title: "Продажа песка и ПГС",
+  title: "Песок и ПГС",
   id: "pgs",
   sliderContent: [
     {
-      title: "Продажа песка и ПГС",
+      title: "Песок и ПГС",
       price: [["Цена без НДС"], ["от 6.5 BYN/м3"]],
       image: "./images/pgs.jpeg",
     },
