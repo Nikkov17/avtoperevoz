@@ -39,11 +39,15 @@ function Main() {
           src="./videos/excavator.mp4"
         />
         <nav className="main-our-services">
-          <div>Наши услуги:</div>
+          <p className="description">
+            Выполняем грузоперевозки любой сложности, от вывоза строительного
+            мусора или снега до разработки котлованов. Широкий автопарк и
+            профессиональные водители
+          </p>
+          <ul className="main-our-services-list">{ourServices}</ul>
           <p className="price-info">
             Представленные на сайте цены являются ориентировочными.
           </p>
-          <ul className="main-our-services-list">{ourServices}</ul>
         </nav>
       </div>
       <div className="main-sliders">{mainSliders}</div>

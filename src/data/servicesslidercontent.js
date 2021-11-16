@@ -1,5 +1,5 @@
 const trucksContent = {
-  title: "Грузоперевозки самосвалами",
+  title: "Наш автопарк",
   id: "trucks",
   sliderContent: [
     {
@@ -178,18 +178,6 @@ const vyvozmusoraContent = {
   ],
 };
 
-const specialOffers = {
-  title: "Акции",
-  id: "specialoffers",
-  sliderContent: [
-    {
-      title: "Песок 2 класса с доставкой по г.Минск",
-      id: "specialoffers",
-      price: [["Цена c НДС"], ["18 BYN/м3"]],
-    },
-  ],
-};
-
 const data = [
   trucksContent,
   rastgruntContent,
@@ -202,7 +190,6 @@ const data = [
   snowContent,
   kotlovanContent,
   vyvozmusoraContent,
-  specialOffers,
 ];
 
 export default data;
